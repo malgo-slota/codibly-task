@@ -8,7 +8,7 @@
     Front-end project
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="codibly-task.netlify.app">View Demo</a>
     ·
     <a href="https://github.com/malgo-slota/codibly-task/issues">Report Bug</a>
   </p>
