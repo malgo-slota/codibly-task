@@ -1,0 +1,26 @@
+@import "../index.css";
+
+.table {
+    //for modal position
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+    tr {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        td {
+            padding: 0.5rem;
+        }
+    }
+    tbody {
+        tr {
+            cursor: pointer;
+            padding: 0.6rem;
+        }
+    } 
+}

@@ -1,0 +1,10 @@
+.pagination {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 1rem;
+    &.hide {
+        display: none;
+    }
+}
