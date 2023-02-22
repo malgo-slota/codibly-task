@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { HiArrowSmLeft, HiArrowSmRight } from 'react-icons/hi';
-import DataContext from '../DataContext';
-import './pagination.scss';
+import DataContext from '../context/DataContext';
+import '../styles/pagination.scss';
 
  export default function Pagination () {
   
@@ -10,15 +10,17 @@ import './pagination.scss';
   const pageCount = Math.ceil(itemsTotal / perPage);
 
   const handleNext = () => {
-    if(pageNum < pageCount)
+    if(pageNum < pageCount) {
       setPageNum(pageNum+1);
+    }
     else
       console.log(pageNum + ' last page');
   };
 
   const handlePrev = () => {
-    if(pageNum > 0)
+    if(pageNum > 0) {
       setPageNum(pageNum-1);
+    }
     else
       console.log(pageNum + ' first page');
   };
