@@ -1,7 +1,15 @@
-import React from 'react';
-import './modal.scss';
+import '../styles/modal.scss';
 
-export default function Modal ( {id, name, year, pantone, color, handleClose }) {
+type ModalProps = {
+    id: number,
+    name: string,
+    year: number,
+    pantone: string,
+    color: string,
+    handleClose: () => void,
+}
+
+export default function Modal ( {id, name, year, pantone, color, handleClose }: ModalProps) {
     
   return (
     <div className="modal">
